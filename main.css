@@ -52,6 +52,24 @@ h2 {
     justify-content: center;
 }
 
+.animals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.box{
+    width: 33%;
+}
+
+.pics{
+    align-self: center;
+    max-width: 80%;
+}
+.box h2{
+    font-size: large;
+}
 ul {
     display: flex;
     justify-content: space-between;
