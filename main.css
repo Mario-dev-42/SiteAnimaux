@@ -1,0 +1,12 @@
+#cards .upper{
+width: 33%;
+float: left;
+}
+#cards .lower{
+    width: 33%;
+    float: left;
+    }
+.pics{
+    max-width: 150px;
+    align-self: center;
+}
