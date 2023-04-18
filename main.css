@@ -51,17 +51,24 @@ h2 {
     align-items: center;
     justify-content: center;
 }
-#cards .upper{
-width: 33%;
-float: left;
+
+.animals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
-#cards .lower{
+.box{
     width: 33%;
-    float: left;
-    }
+}
+
 .pics{
-    max-width: 150px;
     align-self: center;
+    max-width: 80%;
+}
+.box h2{
+    font-size: large;
 }
 ul {
     display: flex;
