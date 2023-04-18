@@ -58,9 +58,12 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
 
+
 }
 .box{
     width: 33%;
+    padding-top:8%;
+    padding-bottom: 2%;
 }
 
 .pics{
@@ -69,6 +72,7 @@ h2 {
 }
 .box h2{
     font-size: large;
+    display: flex;
 }
 ul {
     display: flex;
