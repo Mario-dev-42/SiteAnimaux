@@ -1,3 +1,7 @@
+
+
+
+
 #first {
   height: 88vh;
   display: flex;
@@ -13,6 +17,7 @@
 * {
   /* The whole document */
   margin: 0;
+  font-family: 'Cabin', sans-serif;
 }
 ul li {
   display: inline;
