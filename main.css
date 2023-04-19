@@ -1,7 +1,4 @@
 
-
-
-
 #first {
   /* backggound picture */
   height: 88vh;
@@ -14,6 +11,16 @@
   background-position: center center;
   color: white;
 }
+
+.ombres {
+  box-shadow: 0 0 1em rgb(106, 106, 106);
+  /* ombres diffuses et rayon de flou */
+}
+
+* {
+  /* The whole document */
+  margin: 0;
+  font-family: 'Cabin', sans-serif;}
 
 * {
   /* The whole document */
