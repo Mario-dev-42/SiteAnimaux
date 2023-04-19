@@ -3,6 +3,7 @@
 
 
 #first {
+  /* backggound picture */
   height: 88vh;
   display: flex;
   align-items: flex-start;
@@ -21,10 +22,16 @@
 }
 ul li {
   display: inline;
-  margin: 66;
-  padding: 8;
+  margin: 1%;
+  padding: 1%;
 }
 
+.presentation {
+  /* Container for everithing on the background picture */
+  position: absolute;
+  top: 20%;
+  right: 50%;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -50,7 +57,7 @@ h2 {
   margin-top: 50px;
   height: 50px;
   width: 150px;
-  background-color: #f7656e;
+  background-color: #a65132;
   border-radius: 5px;
   cursor: pointer;
   color: white;
