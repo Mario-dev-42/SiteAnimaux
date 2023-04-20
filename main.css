@@ -1,4 +1,3 @@
-
 #first {
   /* backggound picture */
   height: 88vh;
@@ -20,12 +19,7 @@
 * {
   /* The whole document */
   margin: 0;
-  font-family: 'Cabin', sans-serif;}
-
-* {
-  /* The whole document */
-  margin: 0;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 ul li {
   display: inline;
@@ -52,25 +46,36 @@ nav {
 
 h2 {
   display: block;
-  font-size: 7em;
+  font-size: 5em;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  color: rgba(255, 255, 255, 0.815);
+}
+h4 {
+  color: rgba(255, 255, 255, 0.815);
+}
+
+.box h2 {
+  color: #6d6d6de0;
 }
 
 #first .button {
   margin-top: 50px;
   height: 50px;
   width: 150px;
-  background-color: #a65132;
+  background-color: #a651329f;
   border-radius: 5px;
   cursor: pointer;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#first .button:hover {
+  background-color: #a65132d8;
 }
 
 .animals {
@@ -148,6 +153,8 @@ footer {
   background-color: #ccc;
   color: #f0f0f2;
   padding: 1.5%;
+  display: flex;
+  justify-content: center;
 }
 
 ul {
