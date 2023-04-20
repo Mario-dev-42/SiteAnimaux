@@ -68,6 +68,7 @@ h4 {
   align-items: center;
   justify-content: center;
 }
+
 #first .button:hover {
   background-color: #a65132d8;
 }
@@ -102,12 +103,14 @@ h4 {
   font-size: large;
   text-align: center;
 }
+
 .learnmore {
   /* Learn more buttons */
   justify-content: center;
   width: 50%;
   margin: auto;
 }
+
 input[type="text"],
 select,
 textarea {
@@ -163,8 +166,9 @@ footer {
 .topnav {
   border: 0px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap :5%;
   background-color: gray;
   color: white;
   font-size: 1.2em;
@@ -172,11 +176,19 @@ footer {
   width: 100%;
 }
 
+.topnav-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
 /*right ok*/
 .topnav-right {
-  float: right;
-  font-size: 24px;
+  justify-content: right;
+  font-size: 1.2em;
 }
+
 @media screen and (max-width: 1024px) {
   .animals {
     /* Section Animals */
@@ -194,5 +206,8 @@ footer {
   }
   #first {
     height: 60vh;
+  }
+  .topnav-right{
+    font-size: 0.8em;
   }
 }
