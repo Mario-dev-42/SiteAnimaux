@@ -175,7 +175,7 @@ footer {
 /*right ok*/
 .topnav-right {
   float: right;
-  font-size: 24px;
+  font-size: 1.2em;
 }
 @media screen and (max-width: 1024px) {
   .animals {
@@ -194,5 +194,8 @@ footer {
   }
   #first {
     height: 60vh;
+  }
+  .topnav-right {
+    font-size: 0.8em;
   }
 }
