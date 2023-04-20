@@ -31,24 +31,31 @@ ul li {
   /* Container for everithing on the background picture */
   position: absolute;
   top: 20%;
+  left: 10%;
   right: 50%;
 }
+
+/*surement inutile*/
+header {
+  vertical-align: baseline;
+}
+
 nav {
-  display: flex;
+  vertical-align: middle;
   justify-content: space-between;
   align-items: center;
   padding: 0 35 0 35;
   background-color: #0b0b0b;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.5em;
   cursor: pointer;
 }
 
 h2 {
   display: block;
-  font-size: 5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
+  font-size: 7em;
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
@@ -157,13 +164,28 @@ footer {
   justify-content: center;
 }
 
-ul {
+/*TOPNAV*/
+
+/*logo ok*/
+.logo {
+  padding: 0.25em;
+  height: 2.25em;
+  width: 2.25em;
+}
+
+.topnav {
+  border: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0% 0% 0% 0%;
   background-color: gray;
   color: white;
   font-size: 1.2em;
   cursor: pointer;
+}
+
+/*right ok*/
+.topnav-right {
+  float: right;
+  font-size: 24px;
 }
