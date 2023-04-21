@@ -1,3 +1,19 @@
+* {
+  /* The whole document */
+  margin: 0;
+  font-family: "Cabin", sans-serif;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flexbox {
+}
+
 #first {
   /* backggound picture */
   height: 88vh;
@@ -17,12 +33,6 @@
 .ombres {
   box-shadow: 0 0 1em rgb(106, 106, 106);
   /* ombres diffuses et rayon de flou */
-}
-
-* {
-  /* The whole document */
-  margin: 0;
-  font-family: "Cabin", sans-serif;
 }
 
 .presentation {
@@ -48,6 +58,7 @@ h2 {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.815);
 }
+
 h4 {
   color: rgba(255, 255, 255, 0.815);
 }
@@ -68,6 +79,7 @@ h4 {
   align-items: center;
   justify-content: center;
 }
+
 #first .button:hover {
   background-color: #a65132d8;
 }
@@ -80,6 +92,7 @@ h4 {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .box {
   /* Each section of pictures with the text under */
   display: flex;
@@ -97,17 +110,20 @@ h4 {
   margin-right: auto;
   width: 80%;
 }
+
 .box h2 {
   /* Text under pictures */
   font-size: large;
   text-align: center;
 }
+
 .learnmore {
   /* Learn more buttons */
   justify-content: center;
   width: 50%;
   margin: auto;
 }
+
 input[type="text"],
 select,
 textarea {
@@ -143,6 +159,7 @@ input[type="button"]:hover {
   padding: 20px;
   margin: 10%;
 }
+
 footer {
   background-color: #ccc;
   color: #f0f0f2;
@@ -152,6 +169,83 @@ footer {
 }
 
 /*TOPNAV*/
+
+/*menu déroulant*/
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #6d6d6de0;
+  position: sticky;
+  top: 0px;
+}
+
+nav ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+nav ul li {
+  float: left;
+  text-align: center;
+  position: relative;
+}
+
+nav ul::after {
+  display: table;
+  clear: both;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+  width: max-content;
+}
+
+nav a:hover {
+  color: orange;
+  border-bottom: 2px solid gold;
+}
+
+.sous {
+  display: none;
+  box-shadow: 0px 1px 2px #ccc;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav > ul li:hover .sous {
+  display: block;
+}
+.sous li {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+.sous a {
+  padding: 10px;
+  border-bottom: none;
+}
+.sous a:hover {
+  border-bottom: none;
+  background-color: RGBa(200, 200, 200, 0.1);
+}
+
+.deroulant > a::after {
+  content: " ▼";
+  font-size: 12px;
+}
+
+.conteneur {
+  margin: 50px 20px;
+  height: 1500px;
+}
+/*fin menu déroulant*/
 
 /*logo ok*/
 .logo {
@@ -163,8 +257,9 @@ footer {
 .topnav {
   border: 0px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  gap: 5%;
   background-color: gray;
   color: white;
   font-size: 1.2em;
@@ -172,11 +267,19 @@ footer {
   width: 100%;
 }
 
+.topnav-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
 /*right ok*/
 .topnav-right {
-  float: right;
+  justify-content: right;
   font-size: 1.2em;
 }
+
 @media screen and (max-width: 1024px) {
   .animals {
     /* Section Animals */
