@@ -140,7 +140,10 @@ textarea {
 
 input[type="button"] {
   /* All buttons */
-  background-color: #6e6f73;
+  letter-spacing: 1px;
+  font-size: larger;
+  font-weight: bold;
+  background-color: #a65132;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -161,16 +164,26 @@ input[type="button"]:hover {
 }
 
 footer {
-  background-color: #ccc;
+  background-color: #6e6f73be;
   color: #f0f0f2;
-  padding: 1.5%;
+  padding: 3%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 /*TOPNAV*/
 
 /*menu déroulant*/
+
+.buttonMenu {
+  letter-spacing: 1px;
+  font-size: larger;
+  font-weight: bold;
+  text-indent: 10px;
+  text-align: left;
+  color: white;
+  width: 200%;
+}
 
 nav {
   width: 100%;
@@ -215,7 +228,7 @@ nav a:hover {
   box-shadow: 0px 1px 2px #ccc;
   background-color: white;
   position: absolute;
-  width: 100%;
+  width: 200%;
   z-index: 1000;
 }
 
@@ -250,6 +263,7 @@ nav > ul li:hover .sous {
 /*logo ok*/
 .logo {
   padding: 0.25em;
+  padding-left: 0.35em;
   height: 2.25em;
   width: 2.25em;
 }
