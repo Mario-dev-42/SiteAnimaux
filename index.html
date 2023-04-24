@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,8 +15,6 @@
   </head>
 
   <body>
-    <!--Haut du site-->
-
   <!--- MENU TOP ORIGINAL
     <header>
       <div class="topnav">
@@ -34,22 +32,25 @@
     </header>
   -->
 
-
-  <!--MENU DEROULANT-->
-  <nav class="row">
-    <img src="https://github.com/klein9/SiteAnimaux/blob/main/icone.png?raw=true"
-        class="logo flexbox">
-    <ul class="flex">
-      <li class="deroulant">
-        <a class="buttonMenu">Menu</a>
-        <ul class="sous">
-          <li><a>About us</a></li>
-          <li><a>Adoption</a></li>
-          <li><a>Contact us</a></li>
-          <li><a>It's NOT a burger !</a></li>
-        </ul></li>
-    </ul>
-  </nav>
+    <!--MENU DEROULANT-->
+    <nav class="row">
+      <img
+        src="https://github.com/klein9/SiteAnimaux/blob/main/icone.png?raw=true"
+        class="logo flexbox"
+        alt="banière chat et chien berger allemand"
+      />
+      <ul class="flex">
+        <li class="deroulant">
+          <a class="menu bold">Menu</a>
+          <ul class="sous">
+            <li><a>About us</a></li>
+            <li><a>Adoption</a></li>
+            <li><a>Contact us</a></li>
+            <li><a>It's NOT a burger</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
     <!--baniere-->
     <section id="first">
@@ -65,39 +66,64 @@
       </div>
     </section>
 
-    <section class="animals">
+    <div class="animals">
       <article class="box">
-        <img src="./img/cards/akita.jpg" class="pics ombres" />
+        <img
+          src="./img/cards/akita.jpg"
+          class="pics ombres"
+          alt="Chien Akita Inu nounours"
+        />
         <h2>Dog</h2>
         <input type="button" value="Learn more" class="learnmore" />
       </article>
       <article class="box">
-        <img src="./img/cards/pigeon.png" class="pics ombres" />
+        <img
+          src="./img/cards/pigeon.png"
+          class="pics ombres"
+          alt="Pigeon roux domestique sur un siège de voiture"
+        />
         <h2>Pigeon</h2>
         <input type="button" value="Learn more" class="learnmore" />
       </article>
       <article class="box">
-        <img src="./img/cards/chaton.jpeg" class="pics ombres" />
+        <img
+          src="./img/cards/chaton.jpeg"
+          class="pics ombres"
+          alt="Chaton geulard qui miaule"
+        />
         <h2>Kitten</h2>
         <input type="button" value="Learn more" class="learnmore" />
       </article>
       <article class="box">
-        <img src="./img/cards/chiot.jpg" class="pics ombres" />
-        <h2>DOGE 🐕 </h2>
+        <img
+          src="./img/cards/chiot.jpg"
+          class="pics ombres"
+          alt="Chiot Labrador||Golden Retriever regard en coin"
+        />
+        <h2>DOGE</h2>
         <input type="button" value="Learn more" class="learnmore" />
       </article>
       <article class="box">
-        <img src="./img/cards/grumpy.jpg" class="pics ombres" />
-        <h2>Grumpy Cats</h2>
+        <img
+          src="./img/cards/grumpy.jpg"
+          class="pics ombres"
+          alt="Le plus beau chat du monde"
+        />
+        <h2>Grumpy</h2>
         <input type="button" value="Learn more" class="learnmore" />
       </article>
       <article class="box">
-        <img src="./img/cards/staff_husky.jpg" class="pics ombres" />
-        <h2>Silly Dogs</h2>
+        <img
+          src="./img/cards/staff_husky.jpg"
+          class="pics ombres"
+          alt="Croisé staff staffy Stafford terrier avec husky"
+        />
+        <h2>Pigeon</h2>
         <input type="button" value="Learn more" class="learnmore" />
       </article>
-    </section>
-    <section id="contactform">
+    </div>
+
+    <div id="contactform">
       <form>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name.." />
@@ -105,7 +131,7 @@
         <label for="email">Email</label>
         <input type="text" id="email" name="email" placeholder="Your email.." />
 
-        <label for="Phone">Phone</label>
+        <label for="phone">Phone</label>
         <input type="text" id="phone" name="phone" placeholder="Your phone.." />
 
         <label for="choice">Your subject</label>
@@ -125,11 +151,11 @@
 
         <input type="button" value="Submit" />
       </form>
-    </section>
+    </div>
     <footer>
       <h5>
-        Travail de groupe, P9 <br />
-        Gwendal, Vidar et Klein <br />
+        Konexio promotion n°9 <br />
+        Vidar, Klein et Gwendal <br />
         All rights reserved
       </h5>
     </footer>
