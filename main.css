@@ -284,7 +284,7 @@ nav > ul li:hover .sous {
 }
 
 /*Media Queries Touchscreen||Laptop*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .animals {
     /* Section Animals */
     flex-direction: column;
