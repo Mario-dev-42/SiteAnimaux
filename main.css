@@ -10,12 +10,10 @@
   align-items: center;
 }
 
-.flexbox {
-}
 
 /* backggound picture + effet parallax*/
 #first {
-  height: 88vh;
+  height: 95vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -23,7 +21,7 @@
   justify-content: center;
   background: url(img/Baniere/b_chat_chien.jpeg);
   color: white;
-  width: 100%;
+  width: 100vw;
   /*parallax*/
   background-attachment: fixed;
   background-position: center;
@@ -47,7 +45,7 @@
 
 h2 {
   display: block;
-  font-size: 7em;
+  font-size: 5em;
   margin-block-start: 0.25em;
   margin-block-end: 0.25em;
   margin-inline-start: 0px;
@@ -65,7 +63,7 @@ h4 {
 }
 
 #first .button {
-  margin-top: 50px;
+  margin-top: 20px;
   height: 50px;
   width: 150px;
   background-color: #a651329f;
@@ -166,89 +164,8 @@ footer {
   justify-content: center;
 }
 
-/*TOPNAV*/
-/*menu déroulant*/
-.menu {
-  vertical-align: bottom;
-  text-indent: 15px;
-}
 
-nav {
-  width: 100%;
-  margin: 0 auto;
-  background-color: #6d6d6de0;
-  position: sticky;
-  top: 0px;
-}
 
-nav ul {
-  padding: 0px;
-  list-style-type: none;
-}
-
-nav ul li {
-  float: left;
-  text-align: center;
-  position: relative;
-}
-
-nav ul::after {
-  display: table;
-  clear: both;
-}
-
-nav a {
-  display: block;
-  text-decoration: none;
-  color: black;
-  border-bottom: 2px solid transparent;
-  padding: 10px 0px;
-  width: max-content;
-}
-
-nav a:hover {
-  color: #f29849;
-  text-align: left;
-  width: 205%;
-  border-bottom: 2px solid #f2ad85;
-}
-
-.sous {
-  display: none;
-  box-shadow: 0px 1px 2px #ccc;
-  background-color: white;
-  position: absolute;
-  width: 205%;
-  z-index: 1000;
-}
-
-nav > ul li:hover .sous {
-  display: block;
-}
-.sous li {
-  float: none;
-  width: 100%;
-  text-align: left;
-}
-.sous a {
-  padding: 10px;
-  border-bottom: none;
-}
-.sous a:hover {
-  border-bottom: none;
-  width: auto;
-  background-color: #c8c8c8;
-}
-
-.deroulant > a::after {
-  content: " ▼";
-  font-size: 12px;
-}
-
-.conteneur {
-  margin: 50px 20px;
-  height: 1500px;
-}
 
 /*logo*/
 .logo {
@@ -256,32 +173,50 @@ nav > ul li:hover .sous {
   height: 2.1em;
   width: 2.25em;
 }
-
-/*barre navigation*/
-.topnav {
-  border: 0px;
+header {
+  height: 2.65em;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  gap: 5%;
-  background-color: gray;
-  color: white;
-  font-size: 1.2em;
-  cursor: pointer;
-  width: 100%;
 }
 
-.topnav-block {
+header h1 {
+ font-size: 2rem;
+}
+
+.menu {
+  margin: 0.5rem;
+}
+.button {
+  width: 1em;
+}
+.btn_image {
+  padding: 0.2em;
+  width: 1.30em;
+}
+.menu_items {
+  position: absolute;
+  right: 3.45em;
+  top: 0.6em;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
+  flex-direction: column;
+  width: 30vh;
+  background-color:#f0f0f2;
+  border: solid 1px #ccc;
+  display: none;
+}
+.menu_items a {
+  font-size: 1.2rem;
+  border-bottom: solid 1px #ccc;
+}
+.menu_items a:hover {
+  color: #f29849;
+  border-bottom: 2px solid #f2ad85;
 }
 
-.topnav-right {
-  justify-content: right;
-  font-size: 1.2em;
+.menu_items a:last-child {
+  border-bottom: none;
 }
+
 
 /*Media Queries Touchscreen||Laptop*/
 @media screen and (max-width: 600px) {
@@ -301,8 +236,5 @@ nav > ul li:hover .sous {
   }
   #first {
     size: auto;
-  }
-  .topnav-right {
-    font-size: 0.8em;
   }
 }
