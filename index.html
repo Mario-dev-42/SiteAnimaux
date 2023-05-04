@@ -12,45 +12,38 @@
       href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
       rel="stylesheet"
     />
+   
   </head>
 
   <body>
-  <!--- MENU TOP ORIGINAL
-    <header>
-      <div class="topnav">
-        <a class="topnav-block"><img
-            src="https://github.com/klein9/SiteAnimaux/blob/main/icone.png?raw=true"
-            class="logo"
-        /></a>
-        <div class="topnav topnav-right">
-          <a class="topnav-block">About us</a>
-          <a class="topnav-block">Adoption</a>
-          <a class="topnav-block">Contact Us</a>
-          <a class="topnav-block"></a>
-        </div>
-      </div>
-    </header>
-  -->
 
-    <!--MENU DEROULANT-->
-    <nav class="row">
+    <header>
       <img
-        src="https://github.com/klein9/SiteAnimaux/blob/main/icone.png?raw=true"
-        class="logo flexbox"
-        alt="banière chat et chien berger allemand"
-      />
-      <ul class="flex">
-        <li class="deroulant">
-          <a class="menu bold">Menu</a>
-          <ul class="sous">
-            <li><a>About us</a></li>
-            <li><a>Adoption</a></li>
-            <li><a>Contact us</a></li>
-            <li><a>It's NOT a burger</a></li>
-          </ul>
-        </li>
-      </ul>
+      src="https://github.com/klein9/SiteAnimaux/blob/main/icone.png?raw=true"
+      class="logo flexbox"
+      alt="banière chat et chien berger allemand"
+    />
+    <h1><a class="clickable">Animals</a></h1>
+
+    </header>
+    <!-- <nav class="mobile_menu">
+      <div class="menu">
+        <button type="button" class="menu_button"><img class="btn_image" src="img/menu.png" alt="icone du menu"><img class="btn_cross" src="img/cross.svg" alt="icone de la fermeture du menu"></button>
+      </div>  
+      <div class="menu_items">
+        <a>About us</a>
+        <a>Adoption</a>
+        <a>Contact us</a>
+      </div>   
+    </nav> -->
+    <nav class="desktop_menu">
+      <a>About us</a>
+      <a>Adoption</a>
+      <a>Contact us</a>
     </nav>
+
+
+
 
     <!--baniere-->
     <section id="first">
@@ -159,5 +152,6 @@
         All rights reserved
       </h5>
     </footer>
+    <script src="./menuBurger.js"/>
   </body>
 </html>
