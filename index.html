@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+  <!--baniere-->
+  <section class="caroussel-container">
+    <button id="right"></button>
+    <!-- <button class="btn-caroussel">
+      <i class="fa-sharp fa-solid fa-chevron-left"></i>
+    </button> -->
+    <div id="first">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -42,11 +51,13 @@
       <a>Contact us</a>
     </nav>
 
-
-
-
     <!--baniere-->
-    <section id="first">
+  <section class="caroussel-container">
+    <button id="right"></button>
+    <!-- <button class="btn-caroussel">
+      <i class="fa-sharp fa-solid fa-chevron-left"></i>
+    </button> -->
+    <div id="first">
       <div class="presentation">
         <h2>Animals</h2>
         <p>
@@ -57,92 +68,70 @@
         </p>
         <div class="button">Contact Us</div>
       </div>
-    </section>
-
-    <div class="animals">
-      <article class="box">
-        <img
-          src="./img/cards/akita.jpg"
-          class="pics ombres"
-          alt="Chien Akita Inu nounours"
-        />
-        <h2>Dog</h2>
-        <input type="button" value="Learn more" class="learnmore" />
-      </article>
-      <article class="box">
-        <img
-          src="./img/cards/pigeon.png"
-          class="pics ombres"
-          alt="Pigeon roux domestique sur un siège de voiture"
-        />
-        <h2>Pigeon</h2>
-        <input type="button" value="Learn more" class="learnmore" />
-      </article>
-      <article class="box">
-        <img
-          src="./img/cards/chaton.jpeg"
-          class="pics ombres"
-          alt="Chaton geulard qui miaule"
-        />
-        <h2>Kitten</h2>
-        <input type="button" value="Learn more" class="learnmore" />
-      </article>
-      <article class="box">
-        <img
-          src="./img/cards/chiot.jpg"
-          class="pics ombres"
-          alt="Chiot Labrador||Golden Retriever regard en coin"
-        />
-        <h2>DOGE</h2>
-        <input type="button" value="Learn more" class="learnmore" />
-      </article>
-      <article class="box">
-        <img
-          src="./img/cards/grumpy.jpg"
-          class="pics ombres"
-          alt="Le plus beau chat du monde"
-        />
-        <h2>Grumpy</h2>
-        <input type="button" value="Learn more" class="learnmore" />
-      </article>
-      <article class="box">
-        <img
-          src="./img/cards/staff_husky.jpg"
-          class="pics ombres"
-          alt="Croisé staff staffy Stafford terrier avec husky"
-        />
-        <h2>Pigeon</h2>
-        <input type="button" value="Learn more" class="learnmore" />
-      </article>
     </div>
+    <button id="left"></button>
+    <!-- <button class="btn-caroussel">
+      <i class="fa-sharp fa-solid fa-chevron-right"></i>
+    </button> -->
+  </section>
 
-    <div id="contactform">
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name.." />
+  <div class="animals">
+    <article class="box">
+      <img src="./img/cards/akita.jpg" class="pics ombres" alt="Chien Akita Inu nounours" />
+      <h2>Dog</h2>
+      <input type="button" value="Learn more" class="learnmore" />
+    </article>
+    <article class="box">
+      <img src="./img/cards/pigeon.png" class="pics ombres" alt="Pigeon roux domestique sur un siège de voiture" />
+      <h2>Pigeon</h2>
+      <input type="button" value="Learn more" class="learnmore" />
+    </article>
+    <article class="box">
+      <img src="./img/cards/chaton.jpeg" class="pics ombres" alt="Chaton geulard qui miaule" />
+      <h2>Kitten</h2>
+      <input type="button" value="Learn more" class="learnmore" />
+    </article>
+    <article class="box">
+      <img src="./img/cards/chiot.jpg" class="pics ombres" alt="Chiot Labrador||Golden Retriever regard en coin" />
+      <h2>DOGE</h2>
+      <input type="button" value="Learn more" class="learnmore" />
+    </article>
+    <article class="box">
+      <img src="./img/cards/grumpy.jpg" class="pics ombres" alt="Le plus beau chat du monde" />
+      <h2>Grumpy</h2>
+      <input type="button" value="Learn more" class="learnmore" />
+    </article>
+    <article class="box">
+      <img src="./img/cards/staff_husky.jpg" class="pics ombres"
+        alt="Croisé staff staffy Stafford terrier avec husky" />
+      <h2>Pigeon</h2>
+      <input type="button" value="Learn more" class="learnmore" />
+    </article>
+  </div>
 
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email.." />
+  <div id="contactform">
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name.." />
 
-        <label for="phone">Phone</label>
-        <input type="text" id="phone" name="phone" placeholder="Your phone.." />
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email.." />
 
-        <label for="choice">Your subject</label>
-        <select id="choice" name="choice">
-          <option value="adoption">Adoption of an animal</option>
-          <option value="contribute">Contributions</option>
-          <option value="other">Other matters</option>
-        </select>
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" placeholder="Your phone.." />
 
-        <label for="subject"></label>
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="Write something.."
-          style="height: 130px"
-        ></textarea>
+      <label for="choice">Your subject</label>
+      <select id="choice" name="choice">
+        <option value="adoption">Adoption of an animal</option>
+        <option value="contribute">Contributions</option>
+        <option value="other">Other matters</option>
+      </select>
 
-        <input type="button" value="Submit" />
+      
+<label for="subject"></label>
+<textarea id="subject" name="subject" placeholder="Write something.." style="height: 130px"></textarea>
+
+<input type="button" value="Submit" />
       </form>
     </div>
     <footer>
@@ -153,5 +142,6 @@
       </h5>
     </footer>
     <script src="./menuBurger.js"/>
+     <script src="script.js"></script>
   </body>
 </html>
