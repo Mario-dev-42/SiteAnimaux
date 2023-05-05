@@ -1,0 +1,25 @@
+const slideContainer = document.querySelector(".carousel-container");
+const slides = document.querySelectorAll(".slide");
+
+let currentIndex = 0;
+
+function showNextSlide() {
+    // Masquer la diapositive actuelle
+    slides[currentIndex].classList.remove("active");
+  
+    // Incrémenter l'index de la diapositive actuelle
+    currentIndex++;
+  
+    // Si l'index dépasse le nombre de diapositives, revenir au début
+    if (currentIndex >= slides.length) {
+      currentIndex = 0;
+    }
+  
+    // Afficher la diapositive suivante
+    slides[currentIndex].classList.add("active");
+  }
+
+  const nextButton = document.querySelector(".next-button");
+nextButton.addEventListener("click", showNextSlide);
+
+setInterval(showNextSlide, 5000); // afficher la diapositive suivante toutes les 5 secondes
