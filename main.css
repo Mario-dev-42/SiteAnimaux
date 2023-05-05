@@ -3,24 +3,11 @@
   font-family: "Cabin", sans-serif;
 }
 
-.row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+body {
+  overflow-x: hidden;
 }
 
-
-/* backggound picture + effet parallax*/
-#first {
-  height: 95vh;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: url(img/Baniere/b_chat_chien.jpeg);
-  color: white;
+.caroussel-container {
   width: 100vw;
   /*parallax*/
   background-attachment: fixed;
@@ -29,9 +16,61 @@
   background-size: cover;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-caroussel {
+  margin: auto;
+  height: 4rem;
+  background-color: white;
+  border: none;
+  width: 2rem;
+  font-size: 3rem;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+#right {
+  background-color: white;
+  z-index: 2;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#right:hover,
+#left:hover {
+  background-color: #a65132d8;
+}
+
+#left {
+  z-index: 2;
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+
+#first {
+  height: 95vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
 .ombres {
   box-shadow: 0 0 1em rgb(106, 106, 106);
-  /* ombres diffuses et rayon de flou */
 }
 
 /* Container for everithing on the background picture */
@@ -174,9 +213,21 @@ footer {
   width: 2.25em;
   float: left;
 }
-  header h1 {
+
+header {
+  position: fixed;
+  background-color: #f0f0f2;
+  width: 100vw;
+  height: 3.7rem;
+  background-color: #a65132;
+}
+
+header h1 {
   font-size: 1.5rem;
   text-align: center;
+  margin: 0 auto;
+  color: #f0f0f2;
+  padding: 1rem;
 }
 
 /*Media Queries Touchscreen||Laptop*/
@@ -185,67 +236,97 @@ footer {
     /* Section Animals */
     flex-direction: column;
   }
+
   .box {
     /* Each section of pictures with the text under */
     width: 100%;
   }
+
   .presentation {
     width: 60%;
   }
+
   h2 {
     font-size: 4em;
   }
-  #first {
-    size: auto;
-  }
 
   /*navbar en mobile */
-  .menu {
-  margin: 0.5rem;
+  .mobile_menu {
+    position: fixed;
+    right: 0px;
   }
+
+  .menu {
+    margin: 0.5rem;
+  }
+
   .menu_button {
     float: right;
   }
-  .btn_image, .btn_cross {
+
+  .btn_image,
+  .btn_cross {
     padding: 0.2em;
     width: 1.30em;
   }
+
   .btn_cross {
     display: none;
   }
+
   .menu_items {
     position: absolute;
     right: 3em;
     float: right;
     flex-direction: column;
-    width: 50vh;
-    background-color:#f0f0f2;
+    width: 75vw;
+    background-color: #f0f0f2;
     border: solid 1px #ccc;
     display: none;
   }
+
   .menu_items a {
     padding: 2rem;
     font-size: 1.2rem;
     border-bottom: solid 1px #ccc;
   }
+
   .menu_items a:hover {
     color: #f29849;
     border-bottom: 2px solid #f2ad85;
   }
+
   .menu_items a:last-child {
     border-bottom: none;
   }
+
   .desktop_menu {
     display: none;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .desktop_menu{
+  .desktop_menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    position: fixed;
+    background-color: #f0f0f2;
+    width: 100vw;
+    top: 3.7rem;
   }
+
+  .desktop_menu a {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin: 0 5%;
+  }
+
+  .desktop_menu a:hover {
+    color: #f29849;
+    border-bottom: 2px solid #f2ad85;
+  }
+
   .mobile_menu {
     display: none;
   }
