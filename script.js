@@ -9,7 +9,6 @@ const carouselImages = document.querySelector(".caroussel-container");
 const prevButton = document.querySelector("#left");
 const nextButton = document.querySelector("#right");
 
-
 let currentIndex = 0;
 
 function showImage(index) {
@@ -35,11 +34,3 @@ showImage(currentIndex);
 
 nextButton.addEventListener("click", showNextImage);
 prevButton.addEventListener("click", showPrevImage);
-
-// //////////////////////////////////////////////////////////
-
-// // autre facon
-
-// setInterval(() => {
-//     showNextImage(currentIndex)
-// }, 2000);

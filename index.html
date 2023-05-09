@@ -1,79 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Animaux</title>
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!--baniere-->
-  <section class="caroussel-container">
-    <button id="right"></button>
-    <!-- <button class="btn-caroussel">
-      <i class="fa-sharp fa-solid fa-chevron-left"></i>
-    </button> -->
-    <div id="first">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site Animaux</title>
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
-      rel="stylesheet"
-    />
-   
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <img
-      src="https://github.com/klein9/SiteAnimaux/blob/main/icone.png?raw=true"
-      class="logo flexbox"
-      alt="banière chat et chien berger allemand"
-    />
+  <header>
+    <img src="https://github.com/klein9/SiteAnimaux/blob/main/icone.png?raw=true" class="logo flexbox"
+      alt="banière chat et chien berger allemand" />
     <h1><a class="clickable">Animals</a></h1>
-
-    </header>
-    <!-- <nav class="mobile_menu">
-      <div class="menu">
-        <button type="button" class="menu_button"><img class="btn_image" src="img/menu.png" alt="icone du menu"><img class="btn_cross" src="img/cross.svg" alt="icone de la fermeture du menu"></button>
-      </div>  
-      <div class="menu_items">
-        <a>About us</a>
-        <a>Adoption</a>
-        <a>Contact us</a>
-      </div>   
-    </nav> -->
     <nav class="desktop_menu">
       <a>About us</a>
       <a>Adoption</a>
       <a>Contact us</a>
     </nav>
-
+  </header>
+  
+  <main>
     <!--baniere-->
-  <section class="caroussel-container">
-    <button id="right"></button>
-    <!-- <button class="btn-caroussel">
-      <i class="fa-sharp fa-solid fa-chevron-left"></i>
-    </button> -->
-    <div id="first">
-      <div class="presentation">
-        <h2>Animals</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <div class="button">Contact Us</div>
+    <section class="caroussel-container">
+      <div class="container">
+        <button id="left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <div id="first">
+          <div class="presentation">
+            <h2>Animals</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.
+            </p>
+            <div class="button">Contact Us</div>
+          </div>
+        </div>
+        <button id="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
       </div>
-    </div>
-    <button id="left"></button>
-    <!-- <button class="btn-caroussel">
-      <i class="fa-sharp fa-solid fa-chevron-right"></i>
-    </button> -->
-  </section>
+    </section>
 
   <div class="animals">
     <article class="box">
@@ -119,29 +92,31 @@
 
       <label for="phone">Phone</label>
       <input type="text" id="phone" name="phone" placeholder="Your phone.." />
-
       <label for="choice">Your subject</label>
       <select id="choice" name="choice">
         <option value="adoption">Adoption of an animal</option>
         <option value="contribute">Contributions</option>
         <option value="other">Other matters</option>
       </select>
+      <label for="subject"></label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height: 130px"></textarea>
+      <input type="button" value="Submit" />
+    </form>
+  </div>
+</main>
 
-      
-<label for="subject"></label>
-<textarea id="subject" name="subject" placeholder="Write something.." style="height: 130px"></textarea>
+<footer>
+  <h5>
+    Konexio promotion n°9
+    <br />
+    All rights reserved
+  </h5>
+</footer>
 
-<input type="button" value="Submit" />
-      </form>
-    </div>
-    <footer>
-      <h5>
-        Konexio promotion n°9 <br />
-        Vidar, Klein et Gwendal <br />
-        All rights reserved
-      </h5>
-    </footer>
-    <script src="./menuBurger.js"/>
-     <script src="script.js"></script>
-  </body>
+<script src="./menuBurger.js"></script>
+<script src="script.js"></script>
+
+</body>
+
 </html>
+
