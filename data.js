@@ -5,7 +5,7 @@ const animaux = [
     img1: "./img/cards/hachiko1.jpg",
     img2: "./img/cards/hachiko2.jpg",
     descriptionAnim:
-      "Good dog, the definition of faithfulThere is a legend about him that he could wait years for his master to come back.",
+      "Good dog, the definition of faithful. There is a legend about him that he could wait years for his master to come back.",
     review: "Very positive",
     qualities: "faithful, very obedient, respectful",
     colors: "brown, beige",
@@ -64,7 +64,7 @@ const animaux = [
     name: "Husky",
     img1: "./img/cards/husky2.jpg",
     img2: "./img/cards/huskymain1.jpg",
-    descriptionAnim: "Good dog. Nothing more to add",
+    descriptionAnim: "Good dog.",
     review: "positive",
     qualities: "Obediant, calm",
     colors: "black, white, blue",
@@ -81,8 +81,7 @@ console.log("found", found);
 
 const title = document.querySelector('h2')
 title.textContent = found.name;
-title.style.opacity = "100%";
-console.log(title);
+title.className = "nameOfAnimal";
 // Pour qu'il prenne la propriété de l'élément du html avc h2.
 
 const colorsContainer = document.getElementById('colors-container');
@@ -109,9 +108,11 @@ addressContainer.appendChild(addressContent)
 // Contenu address
 const descriptionContainer = document.getElementById("des-container");
 const descriptionContent = document.createElement('p');
+descriptionContent.className = "description";
 descriptionContent.textContent= found.descriptionAnim;
 descriptionContainer.appendChild(descriptionContent);
 // Contenu description
+
 const presentationImg = document.querySelector(".presentation1");
 // presentationImg.style.backgroundImage ="url('" + found.img1 + "');"
 presentationImg.style.backgroundImage = `url('${found.img1}')`;

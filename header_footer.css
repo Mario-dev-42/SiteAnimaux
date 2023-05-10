@@ -1,0 +1,118 @@
+/* Repris du main.css */
+/*menu déroulant*/
+.logo {
+    padding: 0.35em;
+    height: 2.1em;
+    width: 2.25em;
+    float: left;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    background-color: #f0f0f2;
+    width: 100vw;
+    height: 3.7rem;
+    background-color: #a65132;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    color: #f0f0f2;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #ccc;
+    color: #f0f0f2;
+    padding: 1.5%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Media Queries Touchscreen||Laptop*/
+@media screen and (max-width: 600px) {
+    /*navbar en mobile */
+    .mobile_menu {
+        position: fixed;
+        right: 0px;
+        z-index: 20;
+    }
+
+    .menu {
+        margin: 0.5rem;
+    }
+
+    .menu_button {
+        float: right;
+    }
+
+    .btn_image,
+    .btn_cross {
+        padding: 0.2em;
+        width: 1.30em;
+    }
+
+    .btn_cross {
+        display: none;
+    }
+
+    .menu_items {
+        position: absolute;
+        right: 3em;
+        float: right;
+        flex-direction: column;
+        width: 75vw;
+        background-color: #f0f0f2;
+        border: solid 1px #ccc;
+        display: none;
+    }
+
+    .menu_items a {
+        padding: 2rem;
+        font-size: 1.2rem;
+        border-bottom: solid 1px #ccc;
+    }
+
+    .menu_items a:hover {
+        color: #f29849;
+        border-bottom: 2px solid #f2ad85;
+    }
+
+    .menu_items a:last-child {
+        border-bottom: none;
+    }
+
+    .desktop_menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .desktop_menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: fixed;
+        background-color: #f0f0f2;
+        width: 100vw;
+        top: 3.7rem;
+    }
+
+    .desktop_menu a {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        margin: 0 5%;
+    }
+
+    .desktop_menu a:hover {
+        color: #f29849;
+        border-bottom: 2px solid #f2ad85;
+    }
+
+    .mobile_menu {
+        display: none;
+    }
+}
