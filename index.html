@@ -15,7 +15,7 @@
   </head>
 
   <body>
-  <!--- MENU TOP ORIGINAL
+    <!--- MENU TOP ORIGINAL
     <header>
       <div class="topnav">
         <a class="topnav-block"><img
@@ -66,15 +66,21 @@
       </div>
     </section>
 
-    <div class="animals">
+    <div class="animals" id="animals">
       <article class="box">
         <img
           src="./img/cards/akita.jpg"
           class="pics ombres"
           alt="Chien Akita Inu nounours"
         />
-        <h2>Dog</h2>
-        <input type="button" value="Learn more" class="learnmore" />
+        <h2>Hachiko</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="1"
+        />
       </article>
       <article class="box">
         <img
@@ -83,7 +89,13 @@
           alt="Pigeon roux domestique sur un siège de voiture"
         />
         <h2>Pigeon</h2>
-        <input type="button" value="Learn more" class="learnmore" />
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="2"
+        />
       </article>
       <article class="box">
         <img
@@ -91,8 +103,14 @@
           class="pics ombres"
           alt="Chaton geulard qui miaule"
         />
-        <h2>Kitten</h2>
-        <input type="button" value="Learn more" class="learnmore" />
+        <h2>Cat</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="3"
+        />
       </article>
       <article class="box">
         <img
@@ -100,26 +118,44 @@
           class="pics ombres"
           alt="Chiot Labrador||Golden Retriever regard en coin"
         />
-        <h2>DOGE</h2>
-        <input type="button" value="Learn more" class="learnmore" />
+        <h2>Golden Retriever</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="4"
+        />
       </article>
       <article class="box">
         <img
-          src="./img/cards/grumpy.jpg"
+          src="./img/cards/scottishmain2.jpg"
           class="pics ombres"
           alt="Le plus beau chat du monde"
         />
-        <h2>Grumpy</h2>
-        <input type="button" value="Learn more" class="learnmore" />
+        <h2>Scottish</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="5"
+        />
       </article>
       <article class="box">
         <img
-          src="./img/cards/staff_husky.jpg"
+          src="./img/cards/huskymain1.jpg"
           class="pics ombres"
           alt="Croisé staff staffy Stafford terrier avec husky"
         />
-        <h2>Pigeon</h2>
-        <input type="button" value="Learn more" class="learnmore" />
+        <h2>Husky</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="6"
+        />
       </article>
     </div>
 
@@ -159,5 +195,6 @@
         All rights reserved
       </h5>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
