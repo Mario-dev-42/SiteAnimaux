@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 
 <body>
@@ -47,40 +46,99 @@
         <button id="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
       </div>
     </section>
-
-  <div class="animals">
-    <article class="box">
-      <img src="./img/cards/akita.jpg" class="pics ombres" alt="Chien Akita Inu nounours" />
-      <h2>Dog</h2>
-      <input type="button" value="Learn more" class="learnmore" />
-    </article>
-    <article class="box">
-      <img src="./img/cards/pigeon.png" class="pics ombres" alt="Pigeon roux domestique sur un siège de voiture" />
-      <h2>Pigeon</h2>
-      <input type="button" value="Learn more" class="learnmore" />
-    </article>
-    <article class="box">
-      <img src="./img/cards/chaton.jpeg" class="pics ombres" alt="Chaton geulard qui miaule" />
-      <h2>Kitten</h2>
-      <input type="button" value="Learn more" class="learnmore" />
-    </article>
-    <article class="box">
-      <img src="./img/cards/chiot.jpg" class="pics ombres" alt="Chiot Labrador||Golden Retriever regard en coin" />
-      <h2>DOGE</h2>
-      <input type="button" value="Learn more" class="learnmore" />
-    </article>
-    <article class="box">
-      <img src="./img/cards/grumpy.jpg" class="pics ombres" alt="Le plus beau chat du monde" />
-      <h2>Grumpy</h2>
-      <input type="button" value="Learn more" class="learnmore" />
-    </article>
-    <article class="box">
-      <img src="./img/cards/staff_husky.jpg" class="pics ombres"
-        alt="Croisé staff staffy Stafford terrier avec husky" />
-      <h2>Pigeon</h2>
-      <input type="button" value="Learn more" class="learnmore" />
-    </article>
-  </div>
+    
+    <div class="animals" id="animals">
+      <article class="box">
+        <img
+          src="./img/cards/akita.jpg"
+          class="pics ombres"
+          alt="Chien Akita Inu nounours"
+        />
+        <h2>Hachiko</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="1"
+        />
+      </article>
+      <article class="box">
+        <img
+          src="./img/cards/pigeon.png"
+          class="pics ombres"
+          alt="Pigeon roux domestique sur un siège de voiture"
+        />
+        <h2>Pigeon</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="2"
+        />
+      </article>
+      <article class="box">
+        <img
+          src="./img/cards/chaton.jpeg"
+          class="pics ombres"
+          alt="Chaton geulard qui miaule"
+        />
+        <h2>Cat</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="3"
+        />
+      </article>
+      <article class="box">
+        <img
+          src="./img/cards/chiot.jpg"
+          class="pics ombres"
+          alt="Chiot Labrador||Golden Retriever regard en coin"
+        />
+        <h2>Golden Retriever</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="4"
+        />
+      </article>
+      <article class="box">
+        <img
+          src="./img/cards/scottishmain2.jpg"
+          class="pics ombres"
+          alt="Le plus beau chat du monde"
+        />
+        <h2>Scottish</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="5"
+        />
+      </article>
+      <article class="box">
+        <img
+          src="./img/cards/huskymain1.jpg"
+          class="pics ombres"
+          alt="Croisé staff staffy Stafford terrier avec husky"
+        />
+        <h2>Husky</h2>
+        <input
+          id="buttonFiche"
+          type="button"
+          value="Learn more"
+          class="learnmore"
+          data-index="6"
+        />
+      </article>
+    </div>
 
   <div id="contactform">
     <form>
@@ -115,8 +173,8 @@
 
 <script src="./menuBurger.js"></script>
 <script src="script.js"></script>
+<script src="index.js"></script>
 
 </body>
-
 </html>
 

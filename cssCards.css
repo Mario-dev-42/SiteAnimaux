@@ -1,0 +1,330 @@
+
+/* Partie Diaby */
+* {
+	margin: 0;
+	font-family: "Cabin", sans-serif;
+}
+
+body{
+	background-color: #f0f0f2;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.imgcontainer{
+	display: block;
+	width: 30%;
+	position: absolute;
+	bottom: 4px;
+	left: 16px;
+	box-shadow: 0 0 1em rgb(106, 106, 106);
+}
+
+/* .test {
+	color: blue;
+} */
+
+
+
+.description{
+	text-align: right;
+	color: #ffffff;
+	position: absolute;
+	right: 100px;
+	bottom: 125px;
+	font-size: 20px;
+	margin-left:60% ;
+}
+
+h2{
+	text-align: center;
+	color: #ffffff;
+	position: absolute;
+	opacity: 50%;
+	right: 100px;
+	font-size: 100px;
+}
+
+
+
+.presentation1{
+	width: 100%;
+	background-image: url(./img/cards/hachiko1.jpg);
+	background-repeat:no-repeat;
+	text-align: center;
+	font-size: x-large;
+	height: 88vh;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	width: 100%;
+	/*parallax*/
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-weight: bolder;
+
+}
+
+.image2{
+	background-image: url(./img/cards/hachiko2.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.carac{
+	color: rgb(196, 92, 27);
+	text-align: center;
+	font-weight: bold;
+	background-color:white ;
+	padding: 1%;
+	border-bottom:5px solid #a65132;
+	font-size: x-large;
+}
+
+
+.japdog1{
+	font-family: "Cabin", sans-serif;
+	font-weight: bolder;
+	font-size: 15px;
+	text-align: center;
+	color: rgb(41, 41, 41);
+	margin-left: 0;
+	margin-right: 6%;
+	margin-top: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: normal;
+	padding:10px ;
+	margin-bottom: 1%;
+
+	
+}
+
+.japdog1 p{
+	text-align: center;
+}
+
+.misepage {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+
+p{
+	font-size: large;
+	margin-left: 50px;
+}
+
+
+.propri{
+	color: white;
+	border-radius: 12px 12px 12px 12px;
+	border: 2px solid #a65132;
+	font-size: 35px;
+	padding:3%;
+	background-color:#a65132;
+
+}
+
+.contact{
+	font-family: "Cabin", sans-serif;
+	font-weight:bolder;
+	text-align: center;
+	margin-bottom: 20px;
+	color: #a65132;
+}
+
+#buttoncontact{
+	background-color: #e7e7e7;
+	color: black;
+	border-radius:50% 50% 50% 50% / 51% 50% 50% 49%;
+	padding: 2%;
+	font-weight: bold;
+	width: 15%;
+	height: 15%;
+}
+
+#buttoncontact:hover{
+	background-color: #a65132;
+	color: #ffffff;
+}
+
+
+
+
+
+/* Repris du main.css */
+/*TOPNAV*/
+/*menu déroulant*/
+.menu {
+	vertical-align: bottom;
+	text-indent: 15px;
+	font-weight: bold;
+}
+
+nav {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #6d6d6de0;
+	position: sticky;
+	top: 0px;
+}
+
+nav ul {
+	padding: 0px;
+	list-style-type: none;
+}
+
+nav ul li {
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+nav ul::after {
+	display: table;
+	clear: both;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+	width: max-content;
+}
+
+nav a:hover {
+	color: #f29849;
+	text-align: left;
+	width: 205%;
+	border-bottom: 2px solid #f2ad85;
+}
+
+.sous {
+	display: none;
+	box-shadow: 0px 1px 2px #ccc;
+	background-color: white;
+	position: absolute;
+	width: 205%;
+	z-index: 1000;
+}
+
+nav>ul li:hover .sous {
+	display: block;
+}
+
+.sous li {
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+.sous a {
+	padding: 10px;
+	border-bottom: none;
+}
+
+.sous a:hover {
+	border-bottom: none;
+	width: auto;
+	background-color: #c8c8c8;
+}
+
+.deroulant>a::after {
+	content: " ▼";
+	font-size: 12px;
+}
+
+.conteneur {
+	margin: 50px 20px;
+	height: 1500px;
+}
+
+/*logo*/
+.logo {
+	padding: 0.35em;
+	height: 2.1em;
+	width: 2.25em;
+}
+
+.logo:hover{
+	opacity:50%;
+}
+
+/*barre navigation*/
+.topnav {
+	border: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 5%;
+	background-color: gray;
+	color: white;
+	font-size: 1.2em;
+	cursor: pointer;
+	width: 100%;
+}
+
+.topnav-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+}
+
+.topnav-right {
+	justify-content: right;
+	font-size: 1.2em;
+}
+
+footer {
+	background-color: #ccc;
+	color: #a65132;
+	padding: 1.5%;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+	.misepage{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		font-size: 3px;
+	}
+
+	.carac{
+		font-size: small;
+		width: 100%;
+	}
+
+	.description{
+		font-size: 15px;
+		margin: 30px;
+}
+
+h2{
+	font-size: 50px;
+	opacity: 85%;
+	/* margin-top: 140px; */
+	bottom: 30%;
+}
+
+.presentation1{
+	font-weight: bold;
+}
+
+}
