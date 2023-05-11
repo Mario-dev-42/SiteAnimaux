@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll("#buttonFiche");
+const buttons = document.querySelectorAll(".learnmore");
 // console.log(buttons);
 
 const params = new URLSearchParams(window.location.search);
