@@ -2,6 +2,7 @@
 /*menu déroulant*/
 .logo {
     padding: 0.35em;
+    padding-top: 0.80em;
     height: 2.1em;
     width: 2.25em;
     float: left;
@@ -22,6 +23,7 @@ header h1 {
     margin: 0 auto;
     color: #f0f0f2;
     padding: 1rem;
+    width: fit-content;
 }
 
 footer {
