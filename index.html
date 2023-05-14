@@ -1,181 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Site Animaux</title>
-  <link rel="stylesheet" href="./main.css" />
-  <link rel="stylesheet" href="./header_footer.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Animaux</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./header_footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body>
+    <header>
+      <img
+        src="https://github.com/klein9/SiteAnimaux/blob/main/icone.png?raw=true"
+        class="logo flexbox"
+        alt="banière chat et chien berger allemand"
+      />
+      <h1 class="clickable">Animals</h1>
+      <nav class="desktop_menu">
+        <a>About us</a>
+        <a>Adoption</a>
+        <a>Contact us</a>
+      </nav>
+    </header>
 
-  <header>
-    <img src="https://github.com/klein9/SiteAnimaux/blob/main/icone.png?raw=true" class="logo flexbox"
-      alt="banière chat et chien berger allemand" />
-    <h1><a class="clickable">Animals</a></h1>
-    <nav class="desktop_menu">
-      <a>About us</a>
-      <a>Adoption</a>
-      <a>Contact us</a>
-    </nav>
-  </header>
-  
-  <main>
-    <!--baniere-->
-    <section class="caroussel-container">
-      <div class="container">
-        <button id="left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-        <div id="first">
-          <div class="presentation">
-            <h2>Animals</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
-            </p>
-            <div class="button">Contact Us</div>
+    <main>
+      <!--baniere-->
+      <section class="caroussel-container">
+        <div class="container">
+          <button id="left">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div id="first">
+            <div class="presentation">
+              <h2>Animals</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="button">Contact Us</div>
+            </div>
           </div>
+          <button id="right">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </button>
         </div>
-        <button id="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </section>
+
+      <div class="animals" id="animals">
+        <article class="box">
+          <img
+            src="./img/cards/akita.jpg"
+            class="pics ombres"
+            alt="Chien Akita Inu nounours"
+          />
+          <h2>Hachiko</h2>
+          <input
+            id="buttonFiche1"
+            type="button"
+            value="Learn more"
+            class="learnmore"
+            data-index="1"
+          />
+        </article>
+        <article class="box">
+          <img
+            src="./img/cards/pigeon.png"
+            class="pics ombres"
+            alt="Pigeon roux domestique sur un siège de voiture"
+          />
+          <h2>Pigeon</h2>
+          <input
+            id="buttonFiche2"
+            type="button"
+            value="Learn more"
+            class="learnmore"
+            data-index="2"
+          />
+        </article>
+        <article class="box">
+          <img
+            src="./img/cards/chaton.jpeg"
+            class="pics ombres"
+            alt="Chaton geulard qui miaule"
+          />
+          <h2>Cat</h2>
+          <input
+            id="buttonFiche2"
+            type="button"
+            value="Learn more"
+            class="learnmore"
+            data-index="3"
+          />
+        </article>
+        <article class="box">
+          <img
+            src="./img/cards/chiot.jpg"
+            class="pics ombres"
+            alt="Chiot Labrador||Golden Retriever regard en coin"
+          />
+          <h2>Golden Retriever</h2>
+          <input
+            id="buttonFiche3"
+            type="button"
+            value="Learn more"
+            class="learnmore"
+            data-index="4"
+          />
+        </article>
+        <article class="box">
+          <img
+            src="./img/cards/scottishmain2.jpg"
+            class="pics ombres"
+            alt="Le plus beau chat du monde"
+          />
+          <h2>Scottish</h2>
+          <input
+            id="buttonFiche4"
+            type="button"
+            value="Learn more"
+            class="learnmore"
+            data-index="5"
+          />
+        </article>
+        <article class="box">
+          <img
+            src="./img/cards/huskymain1.jpg"
+            class="pics ombres"
+            alt="Croisé staff staffy Stafford terrier avec husky"
+          />
+          <h2>Husky</h2>
+          <input
+            id="buttonFiche5"
+            type="button"
+            value="Learn more"
+            class="learnmore"
+            data-index="6"
+          />
+        </article>
       </div>
-    </section>
-    
-    <div class="animals" id="animals">
-      <article class="box">
-        <img
-          src="./img/cards/akita.jpg"
-          class="pics ombres"
-          alt="Chien Akita Inu nounours"
-        />
-        <h2>Hachiko</h2>
-        <input
-          id="buttonFiche1"
-          type="button"
-          value="Learn more"
-          class="learnmore"
-          data-index="1"
-        />
-      </article>
-      <article class="box">
-        <img
-          src="./img/cards/pigeon.png"
-          class="pics ombres"
-          alt="Pigeon roux domestique sur un siège de voiture"
-        />
-        <h2>Pigeon</h2>
-        <input
-          id="buttonFiche2"
-          type="button"
-          value="Learn more"
-          class="learnmore"
-          data-index="2"
-        />
-      </article>
-      <article class="box">
-        <img
-          src="./img/cards/chaton.jpeg"
-          class="pics ombres"
-          alt="Chaton geulard qui miaule"
-        />
-        <h2>Cat</h2>
-        <input
-          id="buttonFiche2"
-          type="button"
-          value="Learn more"
-          class="learnmore"
-          data-index="3"
-        />
-      </article>
-      <article class="box">
-        <img
-          src="./img/cards/chiot.jpg"
-          class="pics ombres"
-          alt="Chiot Labrador||Golden Retriever regard en coin"
-        />
-        <h2>Golden Retriever</h2>
-        <input
-          id="buttonFiche3"
-          type="button"
-          value="Learn more"
-          class="learnmore"
-          data-index="4"
-        />
-      </article>
-      <article class="box">
-        <img
-          src="./img/cards/scottishmain2.jpg"
-          class="pics ombres"
-          alt="Le plus beau chat du monde"
-        />
-        <h2>Scottish</h2>
-        <input
-          id="buttonFiche4"
-          type="button"
-          value="Learn more"
-          class="learnmore"
-          data-index="5"
-        />
-      </article>
-      <article class="box">
-        <img
-          src="./img/cards/huskymain1.jpg"
-          class="pics ombres"
-          alt="Croisé staff staffy Stafford terrier avec husky"
-        />
-        <h2>Husky</h2>
-        <input
-          id="buttonFiche5"
-          type="button"
-          value="Learn more"
-          class="learnmore"
-          data-index="6"
-        />
-      </article>
-    </div>
 
-  <div id="contactform">
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your name.." />
+      <div id="contactform">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name.." />
 
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email" placeholder="Your email.." />
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email.."
+          />
 
-      <label for="phone">Phone</label>
-      <input type="text" id="phone" name="phone" placeholder="Your phone.." />
-      <label for="choice">Your subject</label>
-      <select id="choice" name="choice">
-        <option value="adoption">Adoption of an animal</option>
-        <option value="contribute">Contributions</option>
-        <option value="other">Other matters</option>
-      </select>
-      <label for="subject"></label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height: 130px"></textarea>
-      <input type="button" value="Submit" />
-    </form>
-  </div>
-</main>
+          <label for="phone">Phone</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Your phone.."
+          />
+          <label for="choice">Your subject</label>
+          <select id="choice" name="choice">
+            <option value="adoption">Adoption of an animal</option>
+            <option value="contribute">Contributions</option>
+            <option value="other">Other matters</option>
+          </select>
+          <label for="subject"></label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 130px"
+          ></textarea>
+          <input type="button" value="Submit" />
+        </form>
+      </div>
+    </main>
 
-<footer>
-  <h5>
-    Konexio promotion n°9
-    <br />
-    All rights reserved
-  </h5>
-</footer>
+    <footer>
+      <h5>
+        Konexio promotion n°9
+        <br />
+        All rights reserved
+      </h5>
+    </footer>
 
-<script src="./menuBurger.js"></script>
-<script src="script.js"></script>
-<script src="index.js"></script>
-
-</body>
+    <script src="./menuBurger.js"></script>
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+    <script src="./clickable-title.js"></script>
+  </body>
 </html>
-
